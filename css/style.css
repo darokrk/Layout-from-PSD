@@ -163,7 +163,11 @@ body { margin: 0; padding: 0; }
 
 #buying .two-column .text-paragraph { font-family: 'Open Sans', sans-serif; font-size: 0.87rem; font-weight: 400; color: #959595; padding: 10px; line-height: 1.6; }
 
-#buying .two-column .buy-now { padding: 15px 25px; display: inline-block; border-radius: 5px; margin: 5px; color: #fff; font-family: 'Open Sans', sans-serif; font-weight: 600; font-size: 13px; background: #82ca9c; }
+#buying .two-column .buy-now { padding: 15px 25px; display: inline-block; border-style: none; border-radius: 5px; margin: 5px; color: #fff; font-family: 'Open Sans', sans-serif; font-weight: 600; font-size: 13px; background: #82ca9c; }
+
+#buying .two-column .buy-now:active { outline: none; }
+
+#buying .two-column .buy-now:hover { cursor: pointer; }
 
 #buying .two-column .icons { padding: 10px 7px; font-size: 20px; color: #c5c5c5; }
 
@@ -182,3 +186,30 @@ body { margin: 0; padding: 0; }
 #footer .text-paragraph { font-family: 'Open Sans', sans-serif; font-size: 0.87rem; font-weight: 400; color: #959595; padding: 10px; line-height: 1.6; }
 
 #footer .input { margin: 0; }
+
+@media (max-width: 767px) { .col-s-1 { width: 8.33%; }
+  .col-s-2 { width: 16.66%; }
+  .col-s-3 { width: 25%; }
+  .col-s-4 { width: 33.33%; }
+  .col-s-5 { width: 41.66%; }
+  .col-s-6 { width: 50%; }
+  .col-s-7 { width: 58.33%; }
+  .col-s-8 { width: 66.66%; }
+  .col-s-9 { width: 75%; }
+  .col-s-10 { width: 83.33%; }
+  .col-s-11 { width: 91.66%; }
+  .col-s-12 { width: 100%; }
+  #text, #four-column, #colour, #buying, #footer { text-align: center; }
+  #gallery { margin: 0; }
+  #gallery .gallery-box_text { font-size: 26px; }
+  #footer { padding: 60px 0; }
+  .container { padding: 15px; }
+  .iphone { display: none; }
+  .slogan-header { font-size: 42px; }
+  .text-header { font-size: 26px; }
+  .text-paragraph { font-size: 13px; }
+  .text-paragraph .input { font-size: 10px; margin: 10px; }
+  .three-column { padding: 80px 0; }
+  .three-column .three-column_title { font-size: 26px; }
+  .two-column { padding: 80px 0; }
+  .side-text.hidden { display: none; } }
