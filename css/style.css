@@ -45,7 +45,7 @@ body { margin: 0; padding: 0; }
 
 #main .hero .logo .logo-photo { vertical-align: middle; }
 
-#main .hero .logo .logo-text { font-family: 'Merriweather', serif; font-size: 20.8px; padding: 5px; color: #fff; vertical-align: middle; }
+#main .hero .logo .logo-text { font-family: 'Merriweather', serif; font-weight: 700; font-size: 20.8px; padding: 5px; color: #fff; vertical-align: middle; }
 
 #main .hero .iphone { position: absolute; height: 100%; width: 40%; background: url("../images/iPhone.png") no-repeat center; background-size: contain; top: 22%; right: 11%; }
 
@@ -205,7 +205,7 @@ body { margin: 0; padding: 0; }
   #footer { padding: 60px 0; }
   .container { padding: 15px; }
   .iphone { display: none; }
-  .slogan-header { font-size: 42px; }
+  .slogan-header { font-size: 42px !important; }
   .text-header { font-size: 26px; }
   .text-paragraph { font-size: 13px; }
   .text-paragraph .input { font-size: 10px; margin: 10px; }
