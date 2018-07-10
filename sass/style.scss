@@ -532,3 +532,54 @@ body {
         display: none;
     }
 }
+
+@media(min-width: 768px) and (max-width: 1199px) {
+
+    .col-m-6 {width: 50%;}
+    .col-m-12 {width: 100%;}
+
+    .container {
+        padding: 10px;
+    }
+    .slogan-text {
+        font-size: 18px;
+    }
+    .text-paragraph {
+        font-size: 16px;
+        .input {
+            font-size: 12px;
+        }
+    }
+    .text-paragraph_header {
+        font-size: 18px;
+    }
+    #gallery {
+        margin: 0;
+        .gallery-box_text {
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .gallery-text_paragraph {
+            font-size: 16px;
+        }
+        .gallery-text_footer {
+            font-size: 16px;
+        }
+    }
+    #four-column {
+        text-align: center;
+    }
+    .three-column_title {
+        margin-top: 0;
+        text-align: center;
+    }
+    .three-column_header {
+        font-size: 18px;
+    }
+    .three-column_paragraph {
+        font-size: 16px;
+    }
+    .side-text.hidden {
+        display: none;
+    }
+}
