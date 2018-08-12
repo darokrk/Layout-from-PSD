@@ -154,23 +154,24 @@
 #footer .footer__container--mod { margin-left: 10%; }
 
 @media (max-width: 767px) { .col-s-12 { width: 100%; }
-  .fonts, .content--grey, #text .text__content, #four-column .four-column__content, #buying .buying-column .buying-column__content, #main .slogan .slogan__header, #main .slogan .slogan__text, #gallery .gallery__header, #gallery .gallery__header .gallery__content, #gallery .gallery__header .gallery__footer, #car .car__slogan .car__content, #car .car__slogan .car__footer, #colour .three-column .three-column__content, #buying .buying-column .buying-rectangle, #buying .buying-column .buying-column__button, #footer .footer__container .footer__content { font-size: 0.8em; margin: 30px; padding: 20px; }
+  .fonts, .content--grey, #text .text__content, #four-column .four-column__content, #buying .buying-column .buying-column__content, #main .slogan .slogan__header, #main .slogan .slogan__text, #gallery .gallery__header, #gallery .gallery__header .gallery__content, #gallery .gallery__header .gallery__footer, #car .car__slogan .car__content, #car .car__slogan .car__footer, #colour .three-column .three-column__content, #buying .buying-column .buying-rectangle, #buying .buying-column .buying-column__button, #footer .footer__container .footer__content { font-size: 1em; margin: 30px; padding: 20px; }
   .content-header, #text .text__header, #four-column .four-column__header, #car .car__slogan .car__header, #colour .three-column .three-column__header, #buying .buying-column .buying-column__header { font-size: 2rem; }
-  .content-title, #four-column .four-column__title, #colour .three-column .three-column__title, #footer .footer__container .footer__header { font-size: 0.9em; }
+  .content-title, #four-column .four-column__title, #colour .three-column .three-column__title, #footer .footer__container .footer__header { font-size: 1.1em; }
   .side-banner, .side-banner--grey { display: none; }
   .side-banner--grey { display: none; }
   #text, #four-column, #colour, #buying, #footer { text-align: center; }
   #main .logo { left: 5%; }
   #main .slogan { left: 5%; top: 45%; }
-  #main .slogan .slogan__header { font-size: 2.4rem; margin: 0; padding: 0; }
+  #main .slogan .slogan__header { font-size: 2.6rem; margin: 0; padding: 0; }
   #main .slogan .slogan__text { margin: 0; padding: 0; }
   #gallery { margin: 0; }
-  #gallery .gallery__header { margin: 20px; font-size: 1.6rem; }
+  #gallery .gallery__header { margin: 20px; font-size: 1.8rem; }
   #gallery .gallery__header .gallery__content { padding: 10px 0; margin: 5px 0; font-size: 0.5em; }
   #gallery .gallery__header .gallery__footer { padding: 10px 0; margin: 10px 0; font-size: 0.5em; }
   #gallery .gallery__layer { pointer-events: none; }
+  #car { background-attachment: unset; }
   #car .car__slogan { left: 5%; top: 35%; }
-  #car .car__slogan .car__header { font-size: 2.4rem; }
+  #car .car__slogan .car__header { font-size: 2.6rem; }
   #car .car__slogan .car__content { margin: 20px 0; padding: 10px; }
   #car .car__slogan .car__footer { margin: 20px 0; padding: 10px; }
   #colour .three-column { padding: 80px 0; }

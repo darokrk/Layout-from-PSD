@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:700i');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=latin-ext');
 .fonts {
     font-family: 'Open Sans', sans-serif;
@@ -439,7 +439,7 @@ body {
         width: 100%;
     }
     .fonts {
-        font-size: 0.8em;
+        font-size: 1em;
         margin: 30px;
         padding: 20px;
     }
@@ -447,7 +447,7 @@ body {
         font-size: 2rem;
     }
     .content-title {
-        font-size: 0.9em;
+        font-size: 1.1em;
     }
     .side-banner {
         display: none;
@@ -470,7 +470,7 @@ body {
             left: 5%;
             top: 45%;
             .slogan__header {
-                font-size: 2.4rem;
+                font-size: 2.6rem;
                 margin: 0;
                 padding: 0;
             }
@@ -484,7 +484,7 @@ body {
         margin: 0;
         .gallery__header {
             margin: 20px;
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             .gallery__content {
                 padding: 10px 0;
                 margin: 5px 0;
@@ -501,11 +501,12 @@ body {
         }
     }
     #car {
+        background-attachment: unset;
         .car__slogan {
             left: 5%;
             top: 35%;
             .car__header {
-                font-size: 2.4rem;
+                font-size: 2.6rem;
             }
             .car__content {
                 margin: 20px 0;
