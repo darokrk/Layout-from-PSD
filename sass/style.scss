@@ -63,6 +63,15 @@
     top: 28%;
 }
 
+@keyframes mymove {
+    from {
+        left: 55%;
+    }
+    to {
+        left: 80%;
+    }
+}
+
 body {
     @extend .marr-padd;
 }
@@ -70,8 +79,6 @@ body {
 * {
     box-sizing: border-box;
 }
-
-/* --- GRID --- */
 
 .row::before,
 .row::after {
@@ -127,6 +134,7 @@ body {
         .logo__text {
             font-family: 'Merriweather', serif;
             font-size: 20.8px;
+            font-weight: 700;
             padding: 5px;
             color: #fff;
             vertical-align: middle;
@@ -173,6 +181,28 @@ body {
     margin-left: 345px;
     .gallery__box {
         height: 278px;
+        position: relative;
+        .gallery__layer {
+            width: 100%;
+            height: 100%;
+            transition: 0.7s;
+            position: absolute;
+            .gallery__icon {
+                color: #fff;
+                position: absolute;
+                left: 80%;
+                bottom: 13%;
+                display: none;
+            }
+            &:hover {
+                background: rgba(0, 0, 0, 0.7);
+                cursor: pointer;
+                .gallery__icon {
+                    display: initial;
+                    animation: mymove 1.5s;
+                }
+            }
+        }
     }
     .gallery__box-1 {
         background: #f5989d;
@@ -184,12 +214,6 @@ body {
         background: url('../images/gallery.jpg') no-repeat center;
         background-size: cover;
         position: relative;
-        .gallery__icon {
-            color: #fff;
-            position: absolute;
-            right: 10%;
-            bottom: 13%;
-        }
     }
     .gallery__box-4 {
         background: #bd8cbf;
@@ -198,11 +222,14 @@ body {
         background: url('../images/gallery-1.jpg') no-repeat center;
         background-size: cover;
         position: relative;
-        .gallery__icon {
-            color: #fff;
-            position: absolute;
-            right: 5%;
-            bottom: 20%;
+        .gallery__layer {
+            .gallery__icon {
+                color: #fff;
+                position: absolute;
+                left: 80%;
+                bottom: 21%;
+                display: none;
+            }
         }
     }
     .gallery__box-6 {
@@ -336,6 +363,8 @@ body {
             }
             &:hover {
                 cursor: pointer;
+                background: #f5989d;
+                transition: 0.7s;
             }
         }
         .buying-column__icons {
@@ -344,6 +373,10 @@ body {
                 font-size: 20px;
                 color: #c5c5c5;
                 padding: 5px;
+                &:hover {
+                    color: #82ca9c;
+                    transition: 0.5s;
+                }
             }
         }
     }
@@ -386,6 +419,10 @@ body {
             background: #82ca9c;
             color: #fff;
             margin-left: -15px;
+            &:hover {
+                background: #f5989d;
+                transition: 0.7s;
+            }
         }
         .footer__content--mod {
             color: #364455;
@@ -426,6 +463,9 @@ body {
         text-align: center;
     }
     #main {
+        .logo {
+            left: 5%;
+        }
         .slogan {
             left: 5%;
             top: 45%;
@@ -443,8 +483,7 @@ body {
     #gallery {
         margin: 0;
         .gallery__header {
-            margin-top: 20px;
-            margin-left: 40px;
+            margin: 20px;
             font-size: 1.6rem;
             .gallery__content {
                 padding: 10px 0;
@@ -453,14 +492,17 @@ body {
             }
             .gallery__footer {
                 padding: 10px 0;
-                margin: 5px 0;
+                margin: 10px 0;
                 font-size: 0.5em;
             }
+        }
+        .gallery__layer {
+            pointer-events: none;
         }
     }
     #car {
         .car__slogan {
-            left: 15%;
+            left: 5%;
             top: 35%;
             .car__header {
                 font-size: 2.4rem;
@@ -481,13 +523,16 @@ body {
         }
     }
     #buying {
-        padding: 20px 0;
+        padding: 0;
         .buying-column {
             padding: 20px 0;
         }
     }
     #footer {
         padding: 60px 0;
+        .footer__container--mod {
+            margin: 0;
+        }
     }
     .iphone {
         display: none;
@@ -544,6 +589,9 @@ body {
         }
         .gallery-footer {
             font-size: 16px;
+        }
+        .gallery__layer {
+            pointer-events: none;
         }
     }
     #buying {
