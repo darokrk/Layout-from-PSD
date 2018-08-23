@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Merriweather:700i");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=latin-ext");
 .fonts, .content--grey, #text .text__content, #four-column .four-column__content, #buying .buying-column .buying-column__content, #main .slogan .slogan__header, #main .slogan .slogan__text, #gallery .gallery__header, #gallery .gallery__header .gallery__content, #gallery .gallery__header .gallery__footer, #car .car__slogan .car__content, #car .car__slogan .car__footer, #colour .three-column .three-column__content, #buying .buying-column .buying-rectangle, #buying .buying-column .buying-column__button, #footer .footer__container .footer__content { font-family: 'Open Sans', sans-serif; color: #fff; font-size: 13px; line-height: 1.7; font-weight: 400; padding: 10px; }
 
@@ -127,7 +127,7 @@
 
 #buying .buying-column .buying-column__icons { margin: 15px 5px; }
 
-#buying .buying-column .buying-column__icons a { font-size: 20px; color: #c5c5c5; padding: 5px; }
+#buying .buying-column .buying-column__icons a { font-size: 20px; color: #c5c5c5; padding: 5px; text-decoration: none; }
 
 #buying .buying-column .buying-column__icons a:hover { color: #82ca9c; transition: 0.5s; }
 
