@@ -135,7 +135,9 @@ html { font-family: "Open Sans", sans-serif; font-size: 13px; }
 
 .footer .content--link:hover { color: #82ca9c; transition: 0.5s; }
 
-.footer .form__input { width: 80%; height: 50px; border: none; font-size: 18px; padding: 0; }
+.footer .footer__form { max-width: 470px; padding: 10px; }
+
+.footer .form__input { width: 70%; height: 50px; border: none; font-size: 18px; }
 
 .footer .form__input:focus { outline: none; }
 
@@ -167,28 +169,26 @@ html { font-family: "Open Sans", sans-serif; font-size: 13px; }
   .buying .buying__column .icons__wrapper { margin: 20px; }
   .footer .content__title { text-align: left; }
   .footer .footer--margin { margin: 0; }
-  .footer .footer__form { padding: 10px; }
+  .footer .form__input { width: 80%; }
+  .footer .form__btn { width: 20%; }
   .iphone { display: none; } }
 
 @media (min-width: 768px) and (max-width: 1199px) { .col-m-6 { width: 50%; }
   .col-m-12 { width: 100%; }
-  .container { padding: 20px; }
+  .content__header { text-align: center; }
+  .content__title { text-align: center; }
   .side__banner { display: none; }
   .side__banner--grey { display: none; }
-  .fonts { font-size: 14px; }
-  .content-title { font-size: 15px; }
-  #main .logo { left: 10%; }
-  #main .slogan { left: 10%; top: 48%; }
-  #main .slogan .slogan__header { font-size: 50px; }
-  #text { text-align: center; }
-  #gallery { margin: 0; text-align: center; }
-  #gallery .gallery__header { font-size: 25px; margin-top: 20px; margin-left: 10px; }
-  #gallery .gallery__content { font-size: 16px; }
-  #gallery .gallery-footer { font-size: 16px; }
-  #gallery .gallery__layer { pointer-events: none; }
-  #buying { padding: 20px 0; }
-  #buying .buying-column { text-align: center; }
-  #four-column { text-align: center; }
-  #colour { text-align: center; }
-  #colour .three-column { padding: 80px 0; }
-  #footer { text-align: center; } }
+  .main .logo { left: 10%; }
+  .main .slogan { left: 10%; top: 48%; }
+  .gallery { margin: 0; }
+  .gallery .gallery__layer { pointer-events: none; }
+  .car .car__wrapper { left: 5%; }
+  .colour__wrapper { text-align: center; }
+  .colour__wrapper .content__text { padding: 10px 20px; }
+  .buying .buying__column { margin: 0; text-align: center; }
+  .footer { text-align: left; }
+  .footer .content__title { text-align: left; }
+  .footer .form__input { width: 80%; }
+  .footer .form__btn { width: 20%; }
+  .footer .footer--margin { margin: 0; } }
