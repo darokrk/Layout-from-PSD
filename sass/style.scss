@@ -435,7 +435,7 @@ html {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 735px) {
   .col-s-12 {
     width: 100%;
   }
@@ -470,6 +470,10 @@ html {
       .slogan__header {
         font-size: 2.5rem;
       }
+    }
+
+    .iphone {
+      height: 75%;
     }
   }
 
@@ -536,13 +540,15 @@ html {
       width: 20%;
     }
   }
+}
 
+@media (max-width: 767px) and (orientation: portrait) {
   .iphone {
     display: none;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 736px) and (max-width: 1199px) {
   .col-m-6 {
     width: 50%;
   }
@@ -594,6 +600,7 @@ html {
 
   .colour__wrapper {
     text-align: center;
+
     .content__text {
       padding: 10px 20px;
     }
@@ -624,5 +631,18 @@ html {
     .footer--margin {
       margin: 0;
     }
+  }
+}
+
+// iPhone X, 8plus
+@media (min-device-width: 375px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .main {
+    .iphone {
+      height: 75%;
+    }
+  }
+
+  .slogan__header {
+    font-size: 4rem;
   }
 }

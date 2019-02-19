@@ -149,7 +149,7 @@ html { font-family: "Open Sans", sans-serif; font-size: 13px; }
 
 .footer .footer--margin { margin-left: 5%; }
 
-@media (max-width: 767px) { .col-s-12 { width: 100%; }
+@media (max-width: 735px) { .col-s-12 { width: 100%; }
   .content__header { font-size: 2rem; text-align: center; }
   .content__title { text-align: center; }
   .side__banner { display: none; }
@@ -157,6 +157,7 @@ html { font-family: "Open Sans", sans-serif; font-size: 13px; }
   .main .logo { left: 5%; }
   .main .slogan { left: 0%; top: 45%; padding: 20px; }
   .main .slogan .slogan__header { font-size: 2.5rem; }
+  .main .iphone { height: 75%; }
   .gallery { margin: 0; }
   .gallery .gallery__header { font-size: 1.8rem; }
   .gallery .gallery__layer { pointer-events: none; }
@@ -170,10 +171,11 @@ html { font-family: "Open Sans", sans-serif; font-size: 13px; }
   .footer .content__title { text-align: left; }
   .footer .footer--margin { margin: 0; }
   .footer .form__input { width: 80%; }
-  .footer .form__btn { width: 20%; }
-  .iphone { display: none; } }
+  .footer .form__btn { width: 20%; } }
 
-@media (min-width: 768px) and (max-width: 1199px) { .col-m-6 { width: 50%; }
+@media (max-width: 767px) and (orientation: portrait) { .iphone { display: none; } }
+
+@media (min-width: 736px) and (max-width: 1199px) { .col-m-6 { width: 50%; }
   .col-m-12 { width: 100%; }
   .content__header { text-align: center; }
   .content__title { text-align: center; }
@@ -192,3 +194,6 @@ html { font-family: "Open Sans", sans-serif; font-size: 13px; }
   .footer .form__input { width: 80%; }
   .footer .form__btn { width: 20%; }
   .footer .footer--margin { margin: 0; } }
+
+@media (min-device-width: 375px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) { .main .iphone { height: 75%; }
+  .slogan__header { font-size: 4rem; } }
